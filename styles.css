@@ -19,6 +19,11 @@ body {
 
 header {
     padding: 1rem, 2rem, 1rem, 2rem;
+    max-width: 90%;
+}
+
+footer {
+    max-width: 90%;
 }
 
 h1 {
@@ -29,12 +34,22 @@ img {
     width: 100%;
 }
 
+ul {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
 .top-link {
-    display: inline-flex;
     padding: 0%;
     list-style-type: none;
-    justify-content: space-between;
     color: lightgray;
+    max-width: 80%;
+}
+
+.top-link > a {
+    color: lightgray;
+    max-width: 80%;
 }
 
 .bot-link {
@@ -45,9 +60,14 @@ img {
     color: tomato;
 }
 
+.bot-link > a {
+    color: tomato;
+}
+
+/* 
 a:visited {
     color:tomato;
-}
+} */
 
 .continues {
     display:inline-flex;
@@ -66,7 +86,7 @@ article {
 }
 
 p::first-letter {
-    font-size: 250%;
+    font-size: 275%;
     float: left;
 }
 
